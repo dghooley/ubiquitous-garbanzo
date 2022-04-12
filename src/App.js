@@ -41,7 +41,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Particles from "react-tsparticles";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
- 
+import AboutMe from "./components/AboutMe";
+
 function App() {
   return (
     <>
@@ -65,7 +66,9 @@ function App() {
         //     },
         //   },
         // }}
+        
         options={{
+          fullScreen: { enable: false, zIndex: 0 },
           background: {
             color: {
               value: "transparent",
@@ -145,9 +148,10 @@ function App() {
       />
       <Navbar />
       <Header />
+      <AboutMe />
     </>
   );
 }
- 
+
 export default App;
 
