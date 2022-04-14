@@ -45,6 +45,7 @@ import AboutMe from "./components/AboutMe";
 import Services from "./components/Services";
 import Experience from "./components/Experience";
 
+
 function App() {
   return (
     <>
@@ -153,6 +154,7 @@ function App() {
       <AboutMe />
       <Services />
       <Experience />
+
     </>
   );
 }
