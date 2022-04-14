@@ -8,7 +8,7 @@
   --primary-grey: #ccd1d9;
   --primary-dark-grey: #666666;
   --primary-orange: #f9ab00;
-  --primary-dark: rgb(52, 58, 64);
+  --primary-dark: rgba(255, 255, 255, 0);
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
 }
@@ -23,6 +23,7 @@ body {
 nav{
   z-index: 2;
 }
+
 .logo{
   width: 10.25rem;
 }
@@ -30,6 +31,7 @@ nav{
 /*-----------MENU LINKS-------------*/
 
 nav a.nav-link {
+  font-size: .8rem;
   letter-spacing: 0.0375rem;
   cursor: pointer;
 }
@@ -45,13 +47,13 @@ nav ul li {
   border-top: 0.1875rem solid var(--primary-dark);
 }
 
-.navbar-brand{
+.navbar-brand {
   max-width: 17.25rem;
   padding: 0 !important;
   height: 6rem !important;
 }
 
-.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+.navbar-nav > li > a.active, .navbar-nav > li > a:focus {
   border-top: 0.1875rem solid var(--primary-orange);
 }
 
@@ -64,7 +66,6 @@ nav ul li {
     width: 7rem;
   }
 }
-
 
 /********************************HEADER******************************/
 
