@@ -79,7 +79,7 @@ const Portfolio = () => {
     const openPopupboxforwhere2watch = () => {
         const content = (
             <>
-                <img className="portfolio-image-popupbox" src={where2watch} alt="API Search Engine..." />
+                <img className="portfolio-image-popupbox" src={where2watch} alt="Movie/Show Search Engine..." />
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
                 <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://saadsyed98.github.io/Where2Watch/", "_blank")}>https://saadsyed98.github.io/Where2Watch/</a> 
                 <br></br>
@@ -91,7 +91,7 @@ const Portfolio = () => {
     const popupboxConfigwhere2watch = {
         titleBar: {
             enable: true,
-            text: "API Search Engine"
+            text: "Movie/Show Search Engine"
         },
         fadeIn: true,
         fadeInSpeed: 500,

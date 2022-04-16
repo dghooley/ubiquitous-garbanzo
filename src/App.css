@@ -334,6 +334,10 @@ nav ul li {
   color: var(--primary-orange);
 }
 
+.portfolio-wrapper h1 {
+  color: var(--primary-orange);
+}
+
 .portfolio-image {
   width: 15rem;
   border: 1px solid var(--primary-orange);
@@ -364,7 +368,7 @@ nav ul li {
   cursor: pointer;
 }
 
-.portfolio-image-box:hover .overflow{
+.portfolio-image-box:hover .overflow {
   opacity: 60%;
   transition: 0.3s ease-in-out;
 }
@@ -397,3 +401,39 @@ nav ul li {
 .hyper-link:hover {
   color: var(--primary-red);
 }
+
+/********************************** MEDIA ******************************/
+@media(max-width: 768px) {
+  .portfolio-image-popupbox{
+    width: 100%
+  }
+}
+
+@media(max-height: 570px) {
+  .popup-box-wrapper {
+    height: 100% !important;
+  }
+  .portfolio-image-popupbox{
+    width: 50%
+  }
+}
+
+@media(min-width: 820px) {
+  .popup-box-wrapper {
+    height: 100% !important;
+  }
+  .portfolio-image-popupbox{
+    width: 100%
+}
+}
+
+@media(max-width: 1180px) {
+  .popup-box-wrapper {
+    height: 100% !important;
+  }
+  .portfolio-image-popupbox{
+    width: 100%
+  }
+}
+
+
