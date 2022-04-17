@@ -11,7 +11,7 @@ const Contacts = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('serviceID', 'templateID', e.target, 'userID')
+        emailjs.sendForm(serviceID, templateID, e.target, userID)
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
@@ -23,7 +23,7 @@ const Contacts = () => {
         <div className="contacts">
             <div className="text-center">
                 <h1>contact me</h1>
-                <p>Please fill out the form and describe your needs and I'll contact you as soon as possible.</p>
+                <p>Please fill out the form and describe your project needs and I'll contact you as soon as possible.</p>
             </div>
             <div className="container">
                 <form onSubmit={sendEmail}>
