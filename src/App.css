@@ -13,6 +13,8 @@
   --primary-black: #000000;
   --primary-transparent-black: rgba(0, 0, 0, 0.7);
   --primary-green: green;
+  --bootstrap-dark-navbar: #212529;
+
 }
 
 
@@ -46,7 +48,7 @@ nav ul li {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
   color: var(--primary-white) !important;
-  border-top: 0.1875rem solid var(--primary-dark);
+  border-top: 0.1875rem solid var(--bootstrap-dark-navbar);
 }
 
 .navbar-brand {
@@ -530,7 +532,7 @@ nav ul li {
   text-transform: uppercase;
 }
 
-contacts p {
+.contacts p {
   color: var(--primary-light-grey);
   font-size: 1.2rem;
 }
