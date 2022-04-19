@@ -1,5 +1,5 @@
 import React from "react";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 
 
 const Contacts = () => {
@@ -11,9 +11,9 @@ const Contacts = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('serviceID', 'templateID', e.target, 'userID')
-            .then((result) => {
-                console.log(result.text);
+        emailjs.sendForm(serviceID, templateID, e.target, userID)
+            .then((response) => {
+                console.log(response.text);
             }, (error) => {
                 console.log(error.text);
             });
