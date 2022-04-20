@@ -3,9 +3,11 @@ import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 
 
+
+
 const Contacts = () => {
     const [successMessage, setSuccessMessage] = useState("");
-    const { register, handleSubmit, errors } = useForm();
+    const { register, handleSubmit, formState: { errors } } = useForm("");
 
     const serviceID = "service_ID";
     const templateID = "template_ID";
@@ -31,15 +33,15 @@ const Contacts = () => {
     const sendEmail = (serviceID, templateID, variables, userID) => {
         emailjs.send(serviceID, templateID, variables, userID)
             .then(() => {
-                setSuccessMessage("Form sent successfully! I'll contact you as soon as possible.");
+                setSuccessMessage("Thank you for your submission! I'll contact you as soon as possible.");
             }).catch(err => console.error(`Something went wrong ${err}`));
     };
 
     return (
-        <div id="contacts" className="contacts">
+        <div className="contacts">
             <div className="text-center">
                 <h1>contact me</h1>
-                <p>Please fill out the form and describe your needs and I'll contact you as soon as possible.</p>
+                <p>Please fill out the form and briefly describe the needs of your project,  and I'll contact you as soon as possible.</p>
                 <span className="success-message">{successMessage}</span>
             </div>
             <div className="container">
@@ -53,15 +55,14 @@ const Contacts = () => {
                                     className="form-control"
                                     placeholder="Name"
                                     name="name"
-                                    ref={
-                                        register({
-                                            required: "Please enter your name",
-                                            maxLength: {
-                                                value: 20,
-                                                message: "Please enter a name with fewer than 20 characters"
-                                            }
-                                        })
-                                    }
+                                    aria-invalid={errors.name ? "true" : "false"}
+                                    {...register("name", {
+                                        required: "Please enter your name",
+                                        maxLength: {
+                                            value: 20,
+                                            message: "Please enter a name with fewer than 20 characters."
+                                        },
+                                    })}
                                 />
                                 <div className="line"></div>
                             </div>
@@ -75,14 +76,16 @@ const Contacts = () => {
                                     className="form-control"
                                     placeholder="Phone Number"
                                     name="phone"
-                                    ref={
-                                        register({
-                                            required: "Please add your phone number",
-                                        })
-                                    }
+                                    aria-invalid={errors.name ? "true" : "false"}
+                                    {...register("phone", {
+                                        required: "Please add your phone number",
+                                    })}
                                 />
                                 <div className="line"></div>
                             </div>
+                            <span className="error-message">
+                                {errors.phone && errors.phone.message}
+                            </span>
                             {/* EMAIL INPUT */}
                             <div className="text-center">
                                 <input
@@ -90,6 +93,14 @@ const Contacts = () => {
                                     className="form-control"
                                     placeholder="Email"
                                     name="email"
+                                    aria-invalid={errors.name ? "true" : "false"}
+                                    {...register("email", {
+                                        required: "Please add your email address",
+                                        pattern: {
+                                            value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                                            message: "invalid email"
+                                        },
+                                    })}
                                 />
                                 <div className="line"></div>
                             </div>
@@ -103,10 +114,10 @@ const Contacts = () => {
                                     className="form-control"
                                     placeholder="Subject"
                                     name="subject"
-                                    ref={
-                                        register({
-                                            required: "OOPS, you forget to add the subject.",
-                                        })
+                                    aria-invalid={errors.name ? "true" : "false"}
+                                    {...register("subject", {
+                                        required: "OOPS, you forgot to add the subject.",
+                                    })
                                     }
                                 />
                                 <div className="line"></div>
@@ -121,12 +132,12 @@ const Contacts = () => {
                                 <textarea
                                     type="text"
                                     className="form-control"
-                                    placeholder="Please describe your project..."
+                                    placeholder="Please briefly describe your project..."
                                     name="description"
-                                    ref={
-                                        register({
-                                            required: "Please briefly describe your project needs...",
-                                        })
+                                    aria-invalid={errors.name ? "true" : "false"}
+                                    {...register("description", {
+                                        required: "Please briefly describe your project needs...",
+                                    })
                                     }
                                 ></textarea>
                                 <div className="line"></div>
