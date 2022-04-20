@@ -15,6 +15,7 @@
   --primary-green: green;
   --bootstrap-dark-navbar: #212529;
 
+
 }
 
 
@@ -609,6 +610,17 @@ textarea.form-control {
   color: var(--primary-green);
 }
 
+.error-message {
+  color: var(--primary-white);
+  background: var(--primary-red);
+  text-align: left;
+}
+
+.success-message {
+  font-weight: 900;
+  color: var(--primary-green);
+}
+
 /*---------------- MEDIA -----------------------*/
 @media(max-width: 768px) {
   .contacts {
@@ -623,3 +635,5 @@ textarea.form-control {
     padding: 0 0.4rem;
   }
 }
+
+/******************************** CONTACTS ******************************/
