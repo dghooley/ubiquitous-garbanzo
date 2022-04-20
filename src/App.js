@@ -47,10 +47,7 @@ import Experience from "./components/Experience";
 import Portfolio from "./components/Portfolio";
 import Testimonials from "./components/Testimonials";
 import Contacts from "./components/Contacts";
-<<<<<<< HEAD
-=======
 import Footer from "./components/Footer";
->>>>>>> footer
 
 
 
@@ -165,10 +162,7 @@ function App() {
       <Portfolio />
       <Testimonials />
       <Contacts />
-<<<<<<< HEAD
-=======
       <Footer />
->>>>>>> footer
 
     </>
   );
