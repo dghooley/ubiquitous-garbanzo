@@ -1,13 +1,10 @@
-<<<<<<< HEAD
 import React from "react";
 import emailjs from "@emailjs/browser";
-=======
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 
 
->>>>>>> footer
 
 
 const Contacts = () => {
@@ -29,14 +26,6 @@ const Contacts = () => {
                 subject: data.subject,
                 description: data.description
 
-<<<<<<< HEAD
-        emailjs.sendForm(serviceID, templateID, e.target, userID)
-            .then((response) => {
-                console.log(response.text);
-            }, (error) => {
-                console.log(error.text);
-            });
-=======
             },
             userID
         )
@@ -48,7 +37,6 @@ const Contacts = () => {
             .then(() => {
                 setSuccessMessage("Thank you for your submission! I'll contact you as soon as possible.");
             }).catch(err => console.error(`Something went wrong ${err}`));
->>>>>>> footer
     };
 
     return (
