@@ -16,7 +16,7 @@ const Footer = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-4 col-md-6 col-sm-6">
-                        <div className="d-flex">
+                        {/* <div className="d-flex">
                             <p>USA</p>
                         </div>
                         <div className="d-flex">
@@ -24,9 +24,9 @@ const Footer = () => {
                         </div>
                         <div className="d-flex">
                             <p>emailAddress@email.com</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-2 col-sm-6">
+                        </div> */}
+                    </div> 
+                    {/* - <div className="col-lg-3 col-md-2 col-sm-6">
                         <div className="row">
                             <div className="col">
                                 <a className="footer-nav">Home</a>
@@ -43,10 +43,10 @@ const Footer = () => {
                                 <a className="footer-nav">Contact</a>
                             </div>
                         </div>
-                    </div>
+    </div> */}
                     <div className="col-lg-5 col-md-5 col-sm-6 align-items-center">
                         <div className="d-flex justify-content-center">
-                            <FacebookShareButton
+                            {/* <FacebookShareButton
                                 url={""}
                                 quote={""}
                                 hashtag="#"
@@ -67,6 +67,7 @@ const Footer = () => {
                             >
                                 <RedditIcon className="mx-3" size={36} />
                             </RedditShareButton>
+*/}
                             <LinkedinShareButton
                                 url={"https://www.linkedin.com/in/derick-hooley/"}
                                 quote={"Fullstack Developer"}

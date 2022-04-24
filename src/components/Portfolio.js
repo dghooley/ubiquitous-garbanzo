@@ -14,11 +14,11 @@ import "react-popupbox/dist/react-popupbox.css";
 const Portfolio = () => {
 
     // hBooker
-    const openPopupboxforhBooker = () => {
+    const openPopupboxHBooker = () => {
         const content = (
             <>
                 <img className="portfolio-image-popupbox" src={hBooker} alt="Hotel Booking App..." />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+                <p>A group collaboration for a hotel booking application.</p>
                 <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://h-booker.herokuapp.com/", "_blank")}>https://h-booker.herokuapp.com/</a> 
                 <br></br>
                 <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Patsax/h-booker")}>https://github.com/Patsax/h-booker</a>
@@ -26,61 +26,62 @@ const Portfolio = () => {
         )
         PopupboxManager.open({ content })
     }
-    const popupboxConfighBooker = {
+
+    const popupboxConfigHBooker = {
         titleBar: {
             enable: true,
-            text: "H-Booker Hotel Booking App"
+            text: "Hotel Booking Application"
         },
         fadeIn: true,
         fadeInSpeed: 500,
     }
 
     // Horiseon Project
-    const openPopupboxforhoriseon = () => {
+    const openPopupboxHoriseon = () => {
         const content = (
             <>
                 <img className="portfolio-image-popupbox" src={horiseon} alt="Horiseon Landing Page..." />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+                <p>This project involved a refactoring of a webpage codebase.</p>
                 <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://dghooley.github.io/horiseonProject/")}>https://dghooley.github.io/horiseonProject/</a>
             </>
         )
         PopupboxManager.open({ content })
     }
-    const popupboxConfighoriseon = {
+    const popupboxConfigHoriseon = {
         titleBar: {
             enable: true,
-            text: "Horiseon Landing Page"
+            text: "Layout design for Horiseon's landing page"
         },
         fadeIn: true,
         fadeInSpeed: 500,
     }
 
     // Run Buddy Project
-    const openPopupboxforrunBuddy = () => {
+    const openPopupboxRunBuddy = () => {
         const content = (
             <>
                 <img className="portfolio-image-popupbox" src={runBuddy} alt="Run Buddy App..." />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+                <p>Built using simple HTML and CSS, this website offers the user fitness training services.</p>
                 <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://dghooley.github.io/run-buddy/")}>https://dghooley.github.io/run-buddy/</a>
             </>
         )
         PopupboxManager.open({ content })
     }
-    const popupboxConfigrunBuddy = {
+    const popupboxConfigRunBuddy = {
         titleBar: {
             enable: true,
-            text: "Run Buddy App"
+            text: "Iteration for Run Buddy Application"
         },
         fadeIn: true,
         fadeInSpeed: 500,
     }
 
     // Where2Watch
-    const openPopupboxforwhere2watch = () => {
+    const openPopupboxWhere2Watch = () => {
         const content = (
             <>
                 <img className="portfolio-image-popupbox" src={where2watch} alt="Movie/Show Search Engine..." />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+                <p>This group project was created to utilize 3rd party APIs to browse a library of shows and movies.</p>
                 <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://saadsyed98.github.io/Where2Watch/", "_blank")}>https://saadsyed98.github.io/Where2Watch/</a> 
                 <br></br>
                 <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/saadsyed98/Where2Watch.git")}>https://github.com/saadsyed98/Where2Watch.git</a>
@@ -88,10 +89,10 @@ const Portfolio = () => {
         )
         PopupboxManager.open({ content })
     }
-    const popupboxConfigwhere2watch = {
+    const popupboxConfigWhere2Watch = {
         titleBar: {
             enable: true,
-            text: "Movie/Show Search Engine"
+            text: "Testing 123..."
         },
         fadeIn: true,
         fadeInSpeed: 500,
@@ -101,36 +102,36 @@ const Portfolio = () => {
         <div id="portfolio" className="portfolio-wrapper">
             <div className="container">
                 <h1 className="text-uppercase text-center py-5">portfolio</h1>
-                <div className="image-box-wrapper row row-cols-auto justify-content-center">
-                    <div className="portfolio-image-box" onClick={openPopupboxforhBooker}>
+                <div className="image-box-wrapper row-cols-auto justify-content-center">
+                    <div className="portfolio-image-box" onClick={openPopupboxHBooker}>
                         <img className="portfolio-image" src={hBooker} alt="Hotel Booking App..." />
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
                     {/* - */}
-                    <div className="portfolio-image-box" onClick={openPopupboxforhoriseon}> 
+                    <div className="portfolio-image-box" onClick={openPopupboxHoriseon}> 
                         <img className="portfolio-image" src={horiseon} alt="Horiseon Landing Page..." />
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
                     {/* - */}
-                    <div className="portfolio-image-box" onClick={openPopupboxforrunBuddy}>
+                    <div className="portfolio-image-box" onClick={openPopupboxRunBuddy}>
                         <img className="portfolio-image" src={runBuddy} alt="RunBuddy App..." />
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
                     {/* - */}
-                    <div className="portfolio-image-box" onClick={openPopupboxforwhere2watch}> 
+                    <div className="portfolio-image-box" onClick={openPopupboxWhere2Watch}> 
                         <img className="portfolio-image" src={where2watch} alt="API Search Engine..." />
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
                 </div>
             </div>
-            <PopupboxContainer {...popupboxConfighBooker} />
-            <PopupboxContainer {...popupboxConfighoriseon} />
-            <PopupboxContainer {...popupboxConfigrunBuddy} />
-            <PopupboxContainer {...popupboxConfigwhere2watch} />
+            <PopupboxContainer {...popupboxConfigHBooker} />
+            <PopupboxContainer {...popupboxConfigHoriseon} />
+            <PopupboxContainer {...popupboxConfigRunBuddy} />
+            <PopupboxContainer {...popupboxConfigWhere2Watch} />
 
         </div>
     )

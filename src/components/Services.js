@@ -7,7 +7,7 @@ import { faDesktop, faFileCode, faEye, faShieldHalved,  } from '@fortawesome/fre
 const Services = () => {
     return (
         <div id="services" className="services">
-            <h1 className="py-5">what i can offer</h1>
+            <h1 className="py-5">Services</h1>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-3 col-md-6 col-sm-6">
