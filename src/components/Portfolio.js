@@ -92,7 +92,7 @@ const Portfolio = () => {
     const popupboxConfigWhere2Watch = {
         titleBar: {
             enable: true,
-            text: "Testing 123..."
+            text: ""
         },
         fadeIn: true,
         fadeInSpeed: 500,
