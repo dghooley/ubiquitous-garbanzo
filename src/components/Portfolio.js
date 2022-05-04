@@ -1,6 +1,6 @@
 import React from "react"
 import hBooker from "../Images/hBooker.png";
-import horiseon from "../Images/horiseon.png";
+import workDay from "../Images/workDay.png";
 import runBuddy from "../Images/runBuddy.png";
 import where2watch from "../Images/where2watch.png";
 // FONT AWESOME IMPORTS
@@ -36,21 +36,21 @@ const Portfolio = () => {
         fadeInSpeed: 500,
     }
 
-    // Horiseon Project
-    const openPopupboxHoriseon = () => {
+    // workDay Project
+    const openPopupboxWorkDay = () => {
         const content = (
             <>
-                <img className="portfolio-image-popupbox" src={horiseon} alt="Horiseon Landing Page..." />
-                <p>This project involved a refactoring of a webpage codebase.</p>
-                <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://dghooley.github.io/horiseonProject/")}>https://dghooley.github.io/horiseonProject/</a>
+                <img className="portfolio-image-popupbox" src={workDay} alt="Work Day Scheduler..." />
+                <p>A simple calendar application that allows a user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.</p>
+                <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://dghooley.github.io/workDayScheduler/")}>https://dghooley.github.io/workDayScheduler/</a>
             </>
         )
         PopupboxManager.open({ content })
     }
-    const popupboxConfigHoriseon = {
+    const popupboxConfigWorkDay = {
         titleBar: {
             enable: true,
-            text: "Layout design for Horiseon's landing page"
+            text: "Work Day Scheduler"
         },
         fadeIn: true,
         fadeInSpeed: 500,
@@ -109,8 +109,8 @@ const Portfolio = () => {
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
                     {/* - */}
-                    <div className="portfolio-image-box" onClick={openPopupboxHoriseon}> 
-                        <img className="portfolio-image" src={horiseon} alt="Horiseon Landing Page..." />
+                    <div className="portfolio-image-box" onClick={openPopupboxWorkDay}> 
+                        <img className="portfolio-image" src={workDay} alt="Work Day Scheduler..." />
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
@@ -129,7 +129,7 @@ const Portfolio = () => {
                 </div>
             </div>
             <PopupboxContainer {...popupboxConfigHBooker} />
-            <PopupboxContainer {...popupboxConfigHoriseon} />
+            <PopupboxContainer {...popupboxConfigWorkDay} />
             <PopupboxContainer {...popupboxConfigRunBuddy} />
             <PopupboxContainer {...popupboxConfigWhere2Watch} />
 
