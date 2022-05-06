@@ -14,7 +14,7 @@ const Services = () => {
                             <div className="box">
                                 <div className="circle"><FontAwesomeIcon className="icon" icon={faDesktop} size="2x"/></div>
                                 <h3>Web Design</h3>
-                                <p>Each project receives individual attention and follow through during all phases of new product development.</p>
+                                <p>Each project receives individual attention and follow through during all phases of product development.</p>
                             </div>
                         </div>
                         {/* - */}
@@ -22,7 +22,7 @@ const Services = () => {
                             <div className="box">
                             <div className="circle"><FontAwesomeIcon className="icon" icon={faFileCode} size="2x"/></div>
                                 <h3>Web Development</h3>
-                                <p>Your website will be built using the latest, most responsive front-end frameworks and libraries.</p>
+                                <p>Your website will be built using the latest, most responsive front-end frameworks and libraries available.</p>
                             </div>
                         </div>
                         {/* - */}
@@ -30,7 +30,7 @@ const Services = () => {
                             <div className="box">
                             <div className="circle"><FontAwesomeIcon className="icon" icon={faEye} size="2x"/></div>
                                 <h3>Responsive Design</h3>
-                                <p>My projects are always evolving as user-friendly</p>
+                                <p>How you view your website matters. Device compatibility is important.</p>
                             </div>
                         </div>
                         {/* - */}
