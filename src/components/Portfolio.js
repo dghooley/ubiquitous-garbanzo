@@ -42,6 +42,8 @@ const Portfolio = () => {
             <>
                 <img className="portfolio-image-popupbox" src={workDay} alt="Work Day Scheduler..." />
                 <p>A simple calendar application that allows a user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.</p>
+                <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://dghooley.github.io/workDayScheduler/", "_blank")}>https://dghooley.github.io/workDayScheduler/</a> 
+                <br></br>
                 <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://dghooley.github.io/workDayScheduler/")}>https://dghooley.github.io/workDayScheduler/</a>
             </>
         )
