@@ -64,6 +64,8 @@ const Portfolio = () => {
             <>
                 <img className="portfolio-image-popupbox" src={runBuddy} alt="Run Buddy App..." />
                 <p>Built using simple HTML and CSS, this website offers the user fitness training services.</p>
+                <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://dghooley.github.io/run-buddy/", "_blank")}>https://dghooley.github.io/run-buddy/</a> 
+                <br></br>
                 <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://dghooley.github.io/run-buddy/")}>https://dghooley.github.io/run-buddy/</a>
             </>
         )
