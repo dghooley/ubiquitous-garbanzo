@@ -30,7 +30,7 @@ const Services = () => {
                             <div className="box">
                             <div className="circle"><FontAwesomeIcon className="icon" icon={faEye} size="2x"/></div>
                                 <h3>Responsive Design</h3>
-                                <p>Your website will be optimized for user-friendly viewing on an array of different devices.</p>
+                                <p>My projects are always evolving as user-friendly</p>
                             </div>
                         </div>
                         {/* - */}

@@ -2,6 +2,7 @@ import React from "react";
 import {
     LinkedinShareButton,
     LinkedinIcon,
+    FontAwesomeIcon,
     FacebookIcon,
     FacebookShareButton,
     RedditIcon,
@@ -25,7 +26,7 @@ const Footer = () => {
                         <div className="d-flex">
                             <p>emailAddress@email.com</p>
                         </div> */}
-                    </div> 
+                    </div>
                     {/* - <div className="col-lg-3 col-md-2 col-sm-6">
                         <div className="row">
                             <div className="col">
