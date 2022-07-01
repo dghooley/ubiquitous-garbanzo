@@ -2,7 +2,8 @@ import React from "react";
 import {
     LinkedinShareButton,
     LinkedinIcon,
-    FontAwesomeIcon,
+    EmailIcon,
+    EmailShareButton,
     FacebookIcon,
     FacebookShareButton,
     RedditIcon,
@@ -10,6 +11,7 @@ import {
     TwitterIcon,
     TwitterShareButton,
 } from "react-share";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
     return (
@@ -69,12 +71,23 @@ const Footer = () => {
                                 <RedditIcon className="mx-3" size={36} />
                             </RedditShareButton>
 */}
+                            <FontAwesomeIcon icon="fa-brands fa-github-square"
+                                url={"https://github.com/dghooley"} />
+
+
+
                             <LinkedinShareButton
                                 url={"https://www.linkedin.com/in/derick-hooley/"}
                                 quote={"Fullstack Developer"}
                             >
                                 <LinkedinIcon className="mx-3" size={36} />
                             </LinkedinShareButton>
+
+                            <EmailShareButton
+
+                            >
+                                <EmailIcon className="mx-3" size={36} ></EmailIcon>
+                            </EmailShareButton>
                         </div>
                         <p className="pt-3 text-center">
                             Copyright&copy;

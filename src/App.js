@@ -34,7 +34,8 @@ import Header from "./components/Header";
 
 export default App;
 */
-
+import React from 'react';
+import ReactDom from 'react-dom';
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 // import Particles from "react-particles-js";
@@ -74,7 +75,7 @@ function App() {
         //     },
         //   },
         // }}
-        
+
         options={{
           fullScreen: { enable: false, zIndex: 0 },
           background: {
