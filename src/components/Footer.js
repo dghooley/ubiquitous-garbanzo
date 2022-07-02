@@ -70,10 +70,6 @@ const Footer = () => {
                                 <RedditIcon className="mx-3" size={36} />
                             </RedditShareButton>
 */}
-                            <FontAwesomeIcon icon="fa-brands fa-github-square"
-                                url={"https://github.com/dghooley"} />
-
-
 
                             <LinkedinShareButton
                                 url={"https://www.linkedin.com/in/derick-hooley/"}
