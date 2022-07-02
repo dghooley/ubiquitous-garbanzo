@@ -2,8 +2,7 @@ import React from "react";
 import {
     LinkedinShareButton,
     LinkedinIcon,
-    EmailIcon,
-    EmailShareButton,
+
     FacebookIcon,
     FacebookShareButton,
     RedditIcon,
@@ -83,11 +82,7 @@ const Footer = () => {
                                 <LinkedinIcon className="mx-3" size={36} />
                             </LinkedinShareButton>
 
-                            <EmailShareButton
 
-                            >
-                                <EmailIcon className="mx-3" size={36} ></EmailIcon>
-                            </EmailShareButton>
                         </div>
                         <p className="pt-3 text-center">
                             Copyright&copy;
