@@ -69,6 +69,7 @@
     ]
   },
   "devDependencies": {
+    "canvas": "^2.9.3",
     "tslint": "^5.20.1"
   }
 }
