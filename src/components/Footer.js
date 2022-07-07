@@ -1,8 +1,10 @@
 import React from "react";
+import resume from "../Images/Resume.pdf"
+import { Document, Page, pdfjs } from "react-pdf";
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
 import {
     LinkedinShareButton,
     LinkedinIcon,
-
     FacebookIcon,
     FacebookShareButton,
     RedditIcon,
@@ -10,6 +12,7 @@ import {
     TwitterIcon,
     TwitterShareButton,
 } from "react-share";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
@@ -79,11 +82,25 @@ const Footer = () => {
                             </LinkedinShareButton>
 
 
+
+
                         </div>
-                        <p className="pt-3 text-center">
+                        <div className="pt-3 text-center">
                             Copyright&copy;
                             {new Date().getFullYear()}&nbsp;DGHDesigns | All Rights Reserved | dghooley@gmail.com
-                        </p>
+                            <div className="res">
+                                <p className="heading"></p>
+                                <a href="https://docs.google.com/document/d/1qyzxc8gOdMbOAXz09myEzWBYCSLTuhLqCD7lKyJt2mQ/edit" rel="nonreferrer" target="_blank">
+                                    <Document
+                                        file={resume}
+                                        onLoadError={console.error}
+                                        style={{ width: '100vw', height: 'auto' }}
+                                    >
+                                        <Page pageIndex={0} />
+                                    </Document>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
