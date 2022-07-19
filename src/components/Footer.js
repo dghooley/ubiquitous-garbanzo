@@ -1,5 +1,4 @@
 import React from "react";
-import resume from "../Images/Resume.pdf"
 import { Document, Page, pdfjs } from "react-pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
 import {
@@ -12,7 +11,8 @@ import {
     TwitterIcon,
     TwitterShareButton,
 } from "react-share";
-
+import Resume from '../assets/Resume.pdf'
+import { FaGithubSquare, FaFilePdf, FaLinkedin } from 'react-icons/fa'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
@@ -74,32 +74,37 @@ const Footer = () => {
                             </RedditShareButton>
 */}
 
-                            <LinkedinShareButton
+                            {/*} <LinkedinShareButton
                                 url={"https://www.linkedin.com/in/derick-hooley/"}
                                 quote={"Fullstack Developer"}
                             >
-                                <LinkedinIcon className="mx-3" size={36} />
+                                <LinkedinIcon className="mx-3" size={38} />
                             </LinkedinShareButton>
+*/}
+
+
+                            <a href={"https://www.linkedin.com/in/derick-hooley/"} target="_blank" rel="nonreferrer"><FaLinkedin className="mx-3" size={42} /></a>
+
+
+                            <a href={"https://github.com/dghooley"}><FaGithubSquare className="mx-3" size={43} />
+                            </a>
+
+
+
+                            <a href={Resume} target="_blank" rel="nonreferrer"><FaFilePdf className="mx-3" size={39} /></a>
 
 
 
 
                         </div>
+
+
+
+
                         <div className="pt-3 text-center">
                             Copyright&copy;
                             {new Date().getFullYear()}&nbsp;DGHDesigns | All Rights Reserved | dghooley@gmail.com
-                            <div className="res">
-                                <p className="heading"></p>
-                                <a href="https://docs.google.com/document/d/1qyzxc8gOdMbOAXz09myEzWBYCSLTuhLqCD7lKyJt2mQ/edit" rel="nonreferrer" target="_blank">
-                                    <Document
-                                        file={resume}
-                                        onLoadError={console.error}
-                                        style={{ width: '100vw', height: 'auto' }}
-                                    >
-                                        <Page pageIndex={0} />
-                                    </Document>
-                                </a>
-                            </div>
+
                         </div>
                     </div>
                 </div>

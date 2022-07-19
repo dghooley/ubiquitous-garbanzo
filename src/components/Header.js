@@ -1,6 +1,7 @@
 import React from "react";
 import Typed from "react-typed";
 import { Link } from "react-scroll";
+import Resume from "../assets/Resume.pdf"
 
 const Header = () => {
     return (
@@ -14,8 +15,13 @@ const Header = () => {
                     typeSpeed={40}
                     backSpeed={60}
                     loop
-                    />
-                    <Link smooth={true} to="contacts" offset={-110} className="btn-main-offer">contact me</Link>
+                />
+                <Link smooth={true} to="contacts" offset={-110} className="btn-main-offer">contact me</Link>
+
+
+                {/*<div class="btn-main">
+                    <a href={Resume} target="_blank" rel="nonreferrer">Resume</a>
+    </div>*/}
             </div>
         </div>
     )
